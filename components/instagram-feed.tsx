@@ -22,11 +22,20 @@ export default function InstagramFeed() {
           <p className="max-w-2xl mx-auto text-lg mb-6">
             Mantente al día con nuestras novedades, consejos de salud y promociones especiales
           </p>
+          <Link
+            href="https://www.instagram.com/apotek.farmacia/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center text-[#246142] font-medium hover:underline mb-10"
+          >
+            <Instagram className="mr-2" size={20} />
+            @apotek
+          </Link>
         </div>
 
         <div className="text-center">
           <Link
-            href="https://www.instagram.com/apotek"
+            href="https://www.instagram.com/apotek.farmacia/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block py-3 px-8 rounded-md font-medium transition-colors"
