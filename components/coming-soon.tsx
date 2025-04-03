@@ -16,8 +16,8 @@ export default function ComingSoon() {
     setError(null)
 
     try {
-      // Reemplaza "xknpwgeo" con tu ID de formulario de Formspree para suscripciones
-      const response = await fetch("https://formspree.io/f/mgvanlbw", {
+      const formspreeId = process.env.NEXT_PUBLIC_FORMSPREE_SUBSCRIPTION_ID
+      const response = await fetch(`https://formspree.io/f/${formspreeId}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

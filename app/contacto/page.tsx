@@ -37,7 +37,8 @@ export default function ContactPage() {
     try {
       // Enviar directamente a Formspree
       // Reemplaza "xknpwgeo" con tu ID de formulario de Formspree
-      const response = await fetch("https://formspree.io/f/xrbpyadq", {
+      const formspreeId = process.env.NEXT_PUBLIC_FORMSPREE_CONTACT_ID
+      const response = await fetch(`https://formspree.io/f/${formspreeId}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
