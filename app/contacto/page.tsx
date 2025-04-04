@@ -35,8 +35,7 @@ export default function ContactPage() {
     setStatus({ submitted: false, submitting: true, error: null })
 
     try {
-      // Enviar directamente a Formspree
-      // Reemplaza "xknpwgeo" con tu ID de formulario de Formspree
+      // Usar la variable de entorno para el ID de Formspree de contacto
       const formspreeId = process.env.NEXT_PUBLIC_FORMSPREE_CONTACT_ID
       const response = await fetch(`https://formspree.io/f/${formspreeId}`, {
         method: "POST",
@@ -105,9 +104,7 @@ export default function ContactPage() {
               <Clock size={24} className="text-green-700 mr-4 mt-1" />
               <div>
                 <h3 className="font-bold mb-1">Horarios de atención</h3>
-                <p>Lunes - Viernes: 8:00 - 20:00</p>
-                <p>Sábados: 9:00 - 18:00</p>
-                <p>Domingos: 10:00 - 14:00</p>
+                <p>Abierto todos los días de 8:00 a 00:00</p>
               </div>
             </div>
           </div>
@@ -198,14 +195,15 @@ export default function ContactPage() {
           </div>
         </div>
       </div>
-      
+
+      {/* Sección del mapa de Google Maps */}
       <div className="mb-16">
         <h2 className={`text-2xl font-bold mb-4 ${baskerville.className}`}>Encuéntranos</h2>
         <div className="w-20 h-1 bg-[#246142] mb-8"></div>
 
         <div className="rounded-lg overflow-hidden h-[450px] shadow-md">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14243.081642389867!2d-65.2942228!3d-26.8154381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942243382e26da45%3A0x33a986c367e4394f!2sFARMACIA%20APOTEK!5e0!3m2!1ses-419!2sar!4v1743712540078!5m2!1ses-419!2sar"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14243.081642389867!2d-65.2942228!3d-26.8154381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942243382e26da45%3A0x33a986c367e4394f!2sFARMACIA%20APOTEK!5e0!3m2!1ses-419!2sar!4v1743727229431!5m2!1ses-419!2sar"
             width="100%"
             height="450"
             style={{ border: 0 }}

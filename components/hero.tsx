@@ -26,10 +26,11 @@ export default function Hero() {
       <div className="container mx-auto px-4 z-10 text-white">
         <div className="max-w-2xl">
           <h1 className={`text-4xl md:text-6xl font-bold mb-4 ${baskerville.className}`}>
-            Tu salud, nuestra prioridad
+            Más que una farmacia, un espacio para vos
           </h1>
           <p className="text-lg md:text-xl mb-8">
-            Descubre el equilibrio natural para tu bienestar con nuestros productos y servicios especializados.
+            Descubre nuestra selección boutique de productos naturales, dermocosmética y medicamentos, con atención
+            personalizada y asesoramiento profesional.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link

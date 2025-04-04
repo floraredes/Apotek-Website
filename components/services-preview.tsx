@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Pill, Stethoscope, Droplet, FlaskRoundIcon as Flask, ShoppingBag, Heart } from "lucide-react"
+import { Pill, Stethoscope, FlaskRoundIcon as Flask, ShoppingBag, Heart, ShoppingCart } from "lucide-react"
 import { Libre_Baskerville } from "next/font/google"
 
 const baskerville = Libre_Baskerville({
@@ -10,9 +10,14 @@ const baskerville = Libre_Baskerville({
 
 const services = [
   {
+    icon: <ShoppingCart size={40} className="text-green-700" />,
+    title: "E-commerce (Próximamente)",
+    description: "Muy pronto podrás realizar tus compras desde la comodidad de tu hogar.",
+  },
+  {
     icon: <Pill size={40} className="text-green-700" />,
     title: "Dispensación de medicamentos",
-    description: "Ofrecemos una amplia gama de medicamentos.",
+    description: "Ofrecemos una amplia gama de medicamentos y productos naturales.",
   },
   {
     icon: <Stethoscope size={40} className="text-green-700" />,
@@ -21,23 +26,18 @@ const services = [
   },
   {
     icon: <Heart size={40} className="text-green-700" />,
-    title: "Control de presión",
+    title: "Control de presión y glucosa",
     description: "Monitoreo regular para mantener tu salud bajo control.",
   },
   {
     icon: <Flask size={40} className="text-green-700" />,
     title: "Fórmulas magistrales",
-    description: "Preparaciones de medicamentos preparados bajo estrictos estándares de calidad.",
+    description: "Preparaciones personalizadas según tus necesidades específicas.",
   },
   {
     icon: <ShoppingBag size={40} className="text-green-700" />,
     title: "Productos de cuidado personal",
-    description: "Amplia selección de productos para tu bienestar.",
-  },
-  {
-    icon: <Droplet size={40} className="text-green-700" />,
-    title: "Suplementos naturales",
-    description: "Complementos alimenticios para fortalecer tu salud.",
+    description: "Amplia selección de productos naturales para tu bienestar.",
   },
 ]
 

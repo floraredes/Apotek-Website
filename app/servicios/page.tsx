@@ -1,4 +1,4 @@
-import { Pill, Stethoscope, Droplet, FlaskRoundIcon as Flask, ShoppingBag, Heart } from "lucide-react"
+import { Pill, Stethoscope, Droplet, FlaskRoundIcon as Flask, ShoppingBag, Heart, ShoppingCart } from "lucide-react"
 import { Libre_Baskerville } from "next/font/google"
 
 const baskerville = Libre_Baskerville({
@@ -8,6 +8,12 @@ const baskerville = Libre_Baskerville({
 })
 
 const services = [
+  {
+    icon: <ShoppingCart size={48} className="text-green-700" />,
+    title: "E-commerce (Próximamente)",
+    description:
+      "Muy pronto podrás realizar tus compras desde la comodidad de tu hogar. Estamos trabajando para ofrecerte la mejor experiencia de compra online.",
+  },
   {
     icon: <Pill size={48} className="text-green-700" />,
     title: "Dispensación de medicamentos",

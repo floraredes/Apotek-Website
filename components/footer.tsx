@@ -15,12 +15,17 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           <div>
             <h3 className={`text-xl font-bold mb-4 ${baskerville.className}`}>APOTEK</h3>
-            <p className="mb-4">Tu farmacia de confianza, comprometida con tu bienestar y salud natural.</p>
+            <p className="mb-4">Más que una farmacia, un espacio para vos</p>
             <div className="flex space-x-4">
               <a href="#" className="text-white hover:text-white/80 transition-colors">
                 <Facebook size={20} />
               </a>
-              <a href="#" className="text-white hover:text-white/80 transition-colors">
+              <a
+                href="https://www.instagram.com/apotek.farmacia"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-white/80 transition-colors"
+              >
                 <Instagram size={20} />
               </a>
               <a href="#" className="text-white hover:text-white/80 transition-colors">
@@ -58,18 +63,17 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-bold mb-4">Horarios</h4>
             <ul className="space-y-2">
-              <li>Lunes - Viernes: 8:00 - 20:00</li>
-              <li>Sábados: 9:00 - 18:00</li>
-              <li>Domingos: 10:00 - 14:00</li>
+              <li>Abierto todos los días</li>
+              <li>De 8:00 a 00:00</li>
             </ul>
           </div>
 
           <div>
             <h4 className="text-lg font-bold mb-4">Contacto</h4>
             <address className="not-italic">
-              <p className="mb-2">Av. Principal 123, Ciudad</p>
-              <p className="mb-2">Teléfono: (123) 456-7890</p>
-              <p>Email: info@apotek.com</p>
+              <p className="mb-2">Galería Mercato, San Lorenzo y Cariola, Yerba Buena, Tucuman, Argentina</p>
+              <p className="mb-2">Teléfono: +54 9 381 454-7817</p>
+              <p>Email: Apotek.farmared@gmail.com</p>
             </address>
           </div>
         </div>

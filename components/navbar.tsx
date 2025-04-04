@@ -20,7 +20,7 @@ export default function Navbar() {
     <header style={{ backgroundColor: "#f8f5f0" }} className="sticky top-0 z-50 shadow-sm">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="/" className="flex items-center space-x-2">
-          <Image src="/images/logo.png" alt="Apotek Logo" width={40} height={40} className="h-10 w-10 object-contain" />
+          <Image src="/images/logo.png" alt="Apotek Logo" width={50} height={50} className="h-12 w-12 object-contain" />
           <span className={`text-2xl font-bold ${baskerville.className}`} style={{ color: "#246142" }}>
             APOTEK
           </span>

@@ -18,15 +18,16 @@ export default function AboutPage() {
 
       <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
         <div>
-          <h2 className={`text-2xl font-bold mb-4 ${baskerville.className}`}>Nuestra Historia</h2>
+          <h2 className={`text-2xl font-bold mb-4 ${baskerville.className}`}>Sobre Nosotros</h2>
           <p className="mb-4">
-            Fundada en 2003, Apotek nació con la visión de ofrecer alternativas naturales para el cuidado de la salud.
-            Lo que comenzó como una pequeña botica familiar, se ha convertido en un referente en productos naturales y
-            atención farmacéutica personalizada.
+            Farmacia Apotek abrió sus puertas el 14 de febrero de 2025, con el sueño de ofrecer un espacio distinto: más
+            humano, más natural y más conectado con las verdaderas necesidades de las personas.
           </p>
           <p>
-            A lo largo de estos años, hemos crecido manteniendo nuestra esencia: el compromiso con la salud integral y
-            el bienestar de nuestros clientes.
+            Desde el comienzo, nos propusimos ir más allá del modelo tradicional de farmacia. En Apotek, combinamos
+            medicamentos con propuestas naturales y de calidad como cosmética vegana, dermocosmética de marcas líderes,
+            perfumería y regalería cuidadosamente seleccionadas. Cada producto que ofrecemos responde a una premisa
+            clara: mejorar la vida de nuestros pacientes de manera integral.
           </p>
         </div>
         <div className="relative h-80 md:h-96 rounded-lg overflow-hidden shadow-lg">
@@ -50,8 +51,8 @@ export default function AboutPage() {
               Misión
             </h3>
             <p>
-              Proporcionar soluciones naturales y personalizadas para mejorar la calidad de vida de nuestros clientes,
-              combinando la sabiduría tradicional con los avances científicos modernos.
+              Nuestra misión es proporcionar soluciones naturales y personalizadas para mejorar la calidad de vida,
+              uniendo el conocimiento tradicional con los avances científicos más recientes.
             </p>
           </div>
 
@@ -60,8 +61,8 @@ export default function AboutPage() {
               Visión
             </h3>
             <p>
-              Ser reconocidos como la farmacia de referencia en productos naturales y atención farmacéutica
-              personalizada, contribuyendo a una sociedad más saludable y consciente.
+              Nos diferencia nuestra atención boutique, donde cada cliente es recibido con tiempo, dedicación y empatía.
+              Queremos que cada visita sea una experiencia positiva y cercana.
             </p>
           </div>
 
@@ -70,11 +71,11 @@ export default function AboutPage() {
               Valores
             </h3>
             <ul className="list-disc list-inside space-y-1">
-              <li>Compromiso con la salud</li>
-              <li>Atención personalizada</li>
-              <li>Calidad y confianza</li>
-              <li>Respeto por la naturaleza</li>
-              <li>Innovación constante</li>
+              <li>Compromiso real con la salud</li>
+              <li>Atención ágil, cercana y personalizada</li>
+              <li>Productos de calidad y marcas de confianza</li>
+              <li>Respeto por la naturaleza y elección consciente</li>
+              <li>Búsqueda constante de innovación</li>
             </ul>
           </div>
         </div>
@@ -88,22 +89,36 @@ export default function AboutPage() {
           Farmacéuticos, técnicos y asesores de salud natural trabajan juntos para ofrecerte el mejor servicio.
         </p>
 
-        <div className="grid md:grid-cols-3 gap-12">
-          {[1, 2, 3].map((item) => (
-            <div key={item} className="text-center">
-              <div className="relative h-64 w-64 mx-auto rounded-full overflow-hidden mb-6 shadow-md">
-                <Image
-                  src={`/images/team-${item}.jpg`} // Cambia esto a tus imágenes reales
-                  alt={`Miembro del equipo ${item}`}
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 25vw"
-                  className="object-cover"
-                />
-              </div>
-              <h3 className={`text-xl font-bold mb-1 ${baskerville.className}`}>Nombre Apellido</h3>
-              <p style={{ color: "#246142" }}>Cargo / Especialidad</p>
-            </div>
-          ))}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <div className="bg-white p-6 rounded-lg shadow-md text-center">
+            <h3 className={`text-xl font-bold mb-1 ${baskerville.className}`}>Gabriela Somaini</h3>
+            <p style={{ color: "#246142" }}>Farmacéutica</p>
+          </div>
+
+          <div className="bg-white p-6 rounded-lg shadow-md text-center">
+            <h3 className={`text-xl font-bold mb-1 ${baskerville.className}`}>Pedro Aredes</h3>
+            <p style={{ color: "#246142" }}>Fundador & Director General</p>
+          </div>
+
+          <div className="bg-white p-6 rounded-lg shadow-md text-center">
+            <h3 className={`text-xl font-bold mb-1 ${baskerville.className}`}>Camila Sercan</h3>
+            <p style={{ color: "#246142" }}>Auxiliar farmacéutica</p>
+          </div>
+
+          <div className="bg-white p-6 rounded-lg shadow-md text-center">
+            <h3 className={`text-xl font-bold mb-1 ${baskerville.className}`}>Nahuel Soraire</h3>
+            <p style={{ color: "#246142" }}>Auxiliar farmacéutico</p>
+          </div>
+
+          <div className="bg-white p-6 rounded-lg shadow-md text-center">
+            <h3 className={`text-xl font-bold mb-1 ${baskerville.className}`}>Agustina Bulacio</h3>
+            <p style={{ color: "#246142" }}>Dermoconsejera</p>
+          </div>
+
+          <div className="bg-white p-6 rounded-lg shadow-md text-center">
+            <h3 className={`text-xl font-bold mb-1 ${baskerville.className}`}>Christian Cruz</h3>
+            <p style={{ color: "#246142" }}>Auxiliar farmacéutico</p>
+          </div>
         </div>
       </div>
     </div>

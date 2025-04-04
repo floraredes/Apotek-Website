@@ -20,12 +20,12 @@ export default function AboutPreview() {
             {/* Divisor con espacio */}
             <div className="w-20 h-1 bg-[#246142] mb-8"></div>
             <p className="mb-6 text-lg">
-              Somos una farmacia comprometida con tu bienestar, ofreciendo productos naturales y atención personalizada
-              desde hace más de 20 años.
+              Somos una farmacia boutique que nació en 2025 con la visión de crear un espacio diferente, donde la
+              atención personalizada y los productos de calidad son nuestra prioridad.
             </p>
             <p className="mb-8">
-              Nuestra misión es proporcionar soluciones naturales para mejorar la calidad de vida de nuestros clientes,
-              combinando la sabiduría tradicional con los avances científicos modernos.
+              En Apotek combinamos medicamentos con propuestas naturales como cosmética vegana, dermocosmética de marcas
+              líderes y productos cuidadosamente seleccionados para mejorar tu calidad de vida.
             </p>
             <Link
               href="/nosotros"
