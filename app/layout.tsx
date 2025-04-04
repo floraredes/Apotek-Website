@@ -21,8 +21,8 @@ const raleway = Raleway({
 })
 
 export const metadata: Metadata = {
-  title: "Apotek - Tu salud, nuestra prioridad",
-  description: "Farmacia especializada en productos naturales y atención personalizada para tu bienestar",
+  title: "Apotek - Más que una farmacia, un espacio para vos",
+  description: "Farmacia boutique especializada en productos naturales y atención personalizada para tu bienestar",
 }
 
 export default function RootLayout({
