@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Libre_Baskerville } from "next/font/google"
+import { MapPin } from "lucide-react"
 
 const baskerville = Libre_Baskerville({
   subsets: ["latin"],
@@ -54,10 +55,19 @@ export default function Hero() {
             >
               Contacto
             </Link>
+            <a
+              href="https://www.google.com/maps/dir/?api=1&destination=FARMACIA+APOTEK&destination_place_id=ChIJRdomLjhDIpQRTznkZ8OGqTM"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center py-2 px-6 rounded-md font-medium transition-colors border-2"
+              style={{ borderColor: "white", color: "white" }}
+            >
+              <MapPin size={18} className="mr-2" />
+              ¿Cómo llegar?
+            </a>
           </div>
         </div>
       </div>
     </section>
   )
 }
-
