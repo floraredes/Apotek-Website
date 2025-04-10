@@ -22,8 +22,19 @@ const raleway = Raleway({
 })
 
 export const metadata: Metadata = {
-  title: "Apotek - Tu salud, nuestra prioridad",
-  description: "Farmacia especializada en productos naturales y atención personalizada para tu bienestar",
+  title: "Apotek - Farmacia Boutique en Yerba Buena, Tucumán",
+  description:
+    "Farmacia boutique en Galería Mercato, Yerba Buena, Tucumán. Ofrecemos medicamentos, cosmética vegana, dermocosmética y productos naturales con atención personalizada.",
+  keywords: "farmacia, Yerba Buena, Tucumán, productos naturales, dermocosmética, atención personalizada, Apotek",
+  openGraph: {
+    title: "Apotek - Farmacia Boutique en Yerba Buena, Tucumán",
+    description:
+      "Farmacia boutique en Galería Mercato, Yerba Buena, Tucumán. Ofrecemos medicamentos, cosmética vegana, dermocosmética y productos naturales con atención personalizada.",
+    url: "https://www.apotekfarmacia.com.ar",
+    siteName: "Apotek Farmacia",
+    locale: "es_AR",
+    type: "website",
+  },
 }
 
 export default function RootLayout({
@@ -58,4 +69,3 @@ export default function RootLayout({
     </html>
   )
 }
-
