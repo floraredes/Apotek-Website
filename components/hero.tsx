@@ -25,7 +25,7 @@ export default function Hero() {
       </div>
 
       <div className="container mx-auto px-4 z-10 text-white">
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between max-w-5xl mx-auto w-full min-h-[600px] md:min-h-0">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between max-w-5xl mx-auto w-full min-h-[600px] md:min-h-0 py-8 md:py-0">
           {/* Hero principal */}
           <div className="max-w-2xl md:mr-8">
             <h1 className={`text-4xl md:text-6xl font-bold mb-4 ${baskerville.className}`}>
