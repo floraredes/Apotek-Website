@@ -72,7 +72,7 @@ export default function ContactPage() {
       <div className="grid md:grid-cols-2 gap-12 mb-16">
         <div>
           <p className="text-lg mb-8">
-            Estamos aquí para ayudarte. No dudes en contactarnos para cualquier consulta o información adicional.
+            Estamos acá para ayudarte. No dudes en contactarnos para cualquier consulta o información adicional.
           </p>
 
           <div className="space-y-6">
@@ -112,7 +112,7 @@ export default function ContactPage() {
 
         <div>
           <div className="bg-white border border-green-700 border-opacity-10 p-6 rounded-lg shadow-md">
-            <h2 className={`text-2xl font-bold mb-4 ${baskerville.className}`}>Envíanos un mensaje</h2>
+            <h2 className={`text-2xl font-bold mb-4 ${baskerville.className}`}>Contactate con nosotros</h2>
 
             {!status.submitted ? (
               <form onSubmit={handleSubmit}>
@@ -189,7 +189,7 @@ export default function ContactPage() {
             ) : (
               <div className="bg-green-700 bg-opacity-10 p-4 rounded-md text-center">
                 <p className="text-lg font-medium text-green-700">¡Gracias por tu mensaje!</p>
-                <p>Nos pondremos en contacto contigo lo antes posible.</p>
+                <p>Nos pondremos en contacto con vos lo antes posible.</p>
               </div>
             )}
           </div>
@@ -198,7 +198,7 @@ export default function ContactPage() {
 
       {/* Sección del mapa de Google Maps */}
       <div className="mb-16">
-        <h2 className={`text-2xl font-bold mb-4 ${baskerville.className}`}>Encuéntranos</h2>
+        <h2 className={`text-2xl font-bold mb-4 ${baskerville.className}`}>Encontranos</h2>
         <div className="w-20 h-1 bg-[#246142] mb-8"></div>
 
         <div className="rounded-lg overflow-hidden h-[450px] shadow-md">

@@ -11,8 +11,21 @@ const baskerville = Libre_Baskerville({
 const services = [
   {
     icon: <ShoppingCart size={40} className="text-green-700" />,
-    title: "E-commerce (Próximamente)",
-    description: "Muy pronto podrás realizar tus compras desde la comodidad de tu hogar.",
+    title: "E-commerce",
+    description: (
+      <>
+        ¡Ya podés comprar online en nuestra red de farmacias!<br />
+        <a
+          href="https://www.farmared24.com.ar/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block mt-4 py-2 px-6 rounded-md font-semibold transition-colors"
+          style={{ backgroundColor: "#246142", color: "white", boxShadow: "0 2px 8px rgba(36,97,66,0.10)" }}
+        >
+          Ir al E-commerce
+        </a>
+      </>
+    ),
   },
   {
     icon: <Pill size={40} className="text-green-700" />,

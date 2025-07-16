@@ -3,7 +3,7 @@
 import { useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { Menu, X } from "lucide-react"
+import { Menu, X, ShoppingBag } from "lucide-react"
 import { Libre_Baskerville } from "next/font/google"
 
 // Libre Baskerville es una alternativa a Baskerville disponible en Google Fonts
@@ -40,6 +40,16 @@ export default function Navbar() {
           <Link href="/contacto" style={{ color: "#246142" }} className="hover:text-opacity-80 transition-colors">
             Contacto
           </Link>
+          <a
+            href="https://www.farmared24.com.ar/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "#246142", display: "flex", alignItems: "center", gap: "0.5rem" }}
+            className="hover:text-opacity-80 transition-colors font-semibold"
+          >
+            <ShoppingBag size={20} style={{ marginBottom: "2px" }} />
+            E-commerce
+          </a>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -84,6 +94,17 @@ export default function Navbar() {
             >
               Contacto
             </Link>
+            <a
+              href="https://www.farmared24.com.ar/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "#246142", display: "flex", alignItems: "center", gap: "0.5rem" }}
+              className="hover:text-opacity-80 transition-colors font-semibold"
+              onClick={() => setIsOpen(false)}
+            >
+              <ShoppingBag size={20} style={{ marginBottom: "2px" }} />
+              E-commerce
+            </a>
           </nav>
         </div>
       )}

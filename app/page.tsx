@@ -2,7 +2,6 @@ import Hero from "@/components/hero"
 import AboutPreview from "@/components/about-preview"
 import ServicesPreview from "@/components/services-preview"
 import InstagramFeed from "@/components/instagram-feed"
-import ComingSoon from "@/components/coming-soon"
 import { Libre_Baskerville } from "next/font/google"
 
 const baskerville = Libre_Baskerville({
@@ -42,7 +41,6 @@ export default function Home() {
       <AboutPreview />
       <ServicesPreview />
       <InstagramFeed />
-      <ComingSoon />
     </>
   )
 }

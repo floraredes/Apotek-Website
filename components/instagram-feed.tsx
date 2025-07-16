@@ -16,11 +16,11 @@ export default function InstagramFeed() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className={`text-3xl font-bold mb-4 ${baskerville.className}`} style={{ color: "#246142" }}>
-            Síguenos en Instagram
+            Seguinos en Instagram
           </h2>
           <div className="w-24 h-1 bg-[#246142] mx-auto mb-8"></div>
           <p className="max-w-2xl mx-auto text-lg mb-6">
-            Mantente al día con nuestras novedades, consejos de salud y promociones especiales
+            Mantenete al día con nuestras novedades, consejos de salud y promociones especiales
           </p>
           <Link
             href="https://www.instagram.com/apotek.farmacia"
